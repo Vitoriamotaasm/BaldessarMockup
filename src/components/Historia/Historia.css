@@ -1,0 +1,261 @@
+.historia {
+  width: 100%;
+  padding: 85px 0 140px;
+
+  background-color: var(--color-gray-light);
+}
+
+.historia__container {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto;
+  padding: 0 34px;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.historia__heading {
+  margin-bottom: 32px;
+}
+
+.historia__eyebrow {
+  display: inline-flex;
+  align-items: center;
+
+  color: var(--color-blue);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.historia__eyebrow::before {
+  content: '';
+
+  width: 32px;
+  height: 2px;
+
+  margin-right: 12px;
+
+  background-color: var(--color-blue);
+}
+
+
+/* =========================================================
+   CONTEÚDO
+   ========================================================= */
+
+.historia__content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 55px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.historia__text {
+  max-width: 610px;
+}
+
+.historia__title {
+  margin: 0 0 25px;
+
+  color: var(--color-gray-dark);
+
+  font-size: clamp(34px, 3.2vw, 44px);
+  line-height: 1.12;
+
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+.historia__title span {
+  color: var(--color-blue);
+}
+
+.historia__text > p {
+  margin: 0 0 17px;
+
+  color: #3a4658;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   DESTAQUES
+   ========================================================= */
+
+.historia__highlights {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+
+  margin-top: 28px;
+}
+
+.historia__highlight {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 11px;
+}
+
+.historia__highlight-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  color: var(--color-blue);
+
+  background-color: rgba(0, 154, 228, 0.08);
+}
+
+.historia__highlight-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.historia__highlight strong {
+  color: var(--color-gray-dark);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.historia__highlight span {
+  color: #737373;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   IMAGEM
+   ========================================================= */
+
+.historia__image {
+  width: 100%;
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background-color: #e9edf0;
+}
+
+.historia__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .historia {
+    padding: 75px 0 85px;
+  }
+
+  .historia__content {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .historia__text {
+    max-width: none;
+  }
+
+  .historia__image {
+    height: 420px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .historia {
+    padding: 65px 0 75px;
+  }
+
+  .historia__container {
+    padding: 0 20px;
+  }
+
+  .historia__heading {
+    margin-bottom: 25px;
+  }
+
+  .historia__eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .historia__eyebrow::before {
+    width: 25px;
+    margin-right: 9px;
+  }
+
+  .historia__title {
+    font-size: 32px;
+
+    letter-spacing: -1px;
+  }
+
+  .historia__text > p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .historia__highlights {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .historia__image {
+    height: 330px;
+
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,739 @@
+.seminovos {
+  position: relative;
+  width: 100%;
+  padding: 110px 0 115px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(0, 200, 255, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 5% 85%,
+      rgba(0, 154, 228, 0.07),
+      transparent 28%
+    ),
+    #f7f9fb;
+}
+
+.seminovos__container {
+  position: relative;
+  z-index: 2;
+
+  width:  100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+  padding: 0 34px;
+}
+
+
+/* =========================================================
+   ELEMENTOS DECORATIVOS DO FUNDO
+   ========================================================= */
+
+.seminovos__background-circle {
+  position: absolute;
+
+  border: 1px solid rgba(0, 154, 228, 0.09);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.seminovos__background-circle--one {
+  width: 620px;
+  height: 620px;
+
+  top: 80px;
+  right: -250px;
+}
+
+.seminovos__background-circle--two {
+  width: 420px;
+  height: 420px;
+
+  bottom: -220px;
+  left: -180px;
+
+  border-color: rgba(0, 200, 255, 0.08);
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.seminovos__heading {
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.seminovos__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color: var(--color-blue);
+
+  font-size: 14px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.seminovos__eyebrow-line {
+  width: 42px;
+  height: 3px;
+
+  flex-shrink: 0;
+
+  border-radius: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-blue),
+    var(--color-blue-light)
+  );
+}
+
+.seminovos__title {
+  max-width: 850px;
+
+  margin: 0;
+
+  color: var(--color-gray-dark);
+
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.02;
+
+  font-weight: 700;
+
+  letter-spacing: -2.5px;
+}
+
+.seminovos__title span {
+  color: var(--color-blue-light);
+}
+
+.seminovos__description {
+  max-width: 650px;
+
+  margin: 20px 0 0;
+
+  color: var(--color-gray-dark);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SHOWCASE
+   ========================================================= */
+
+.seminovos__showcase {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  min-height: 440px;
+
+  overflow: hidden;
+
+  background-color: var(--color-white);
+
+  border: 1px solid rgba(58, 58, 58, 0.06);
+  border-radius: 24px;
+
+  box-shadow:
+    0 25px 70px rgba(19, 19, 19, 0.10);
+}
+
+
+/* =========================================================
+   IMAGEM
+   ========================================================= */
+
+.seminovos__image {
+  position: relative;
+
+  min-height: 440px;
+
+  overflow: hidden;
+
+  background-color: #e9edf0;
+}
+
+.seminovos__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* Gradiente apenas para leitura do texto.
+   NÃO possui hover ou animação. */
+
+.seminovos__image-gradient {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(19, 19, 19, 0.82) 0%,
+      rgba(19, 19, 19, 0.25) 32%,
+      rgba(19, 19, 19, 0) 58%
+    );
+}
+
+
+/* BADGE */
+
+.seminovos__image-badge {
+  position: absolute;
+
+  top: 25px;
+  left: 25px;
+
+  padding: 9px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 20px;
+
+  color: var(--color-white);
+  background: rgba(19, 19, 19, 0.48);
+
+  backdrop-filter: blur(8px);
+}
+
+
+
+
+/* TEXTO DA IMAGEM */
+
+.seminovos__image-caption {
+  position: absolute;
+
+  left: 30px;
+  right: 30px;
+  bottom: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  color: var(--color-white);
+}
+
+.seminovos__image-caption strong {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.seminovos__image-caption span {
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   FINDER
+   ========================================================= */
+
+.seminovos__finder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 48px 50px;
+}
+
+
+/* HEADER DO FINDER */
+
+.seminovos__finder-header {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 16px;
+
+  margin-bottom: 15px;
+}
+
+.seminovos__finder-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: var(--color-blue);
+
+  background-color: rgba(0, 154, 228, 0.09);
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.seminovos__finder-eyebrow {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--color-blue);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.seminovos__finder-title {
+  margin: 0;
+
+  color: var(--color-gray-dark);
+
+  font-size: 25px;
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.seminovos__finder-description {
+  max-width: 440px;
+
+  margin: 0 0 28px;
+
+  color: #777;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+.seminovos__categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.seminovos__category {
+  min-height: 94px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px;
+
+  border: 1px solid #dfe3e7;
+  border-radius: 12px;
+
+  color: var(--color-gray-dark);
+  background-color: var(--color-white);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.seminovos__category:hover {
+  border-color: rgba(0, 154, 228, 0.30);
+
+  color: var(--color-gray-dark);
+
+  background-color: rgba(0, 154, 228, 0.025);
+}
+
+.seminovos__category--active {
+  border-color: var(--color-blue);
+
+  color: var(--color-blue);
+
+  background-color: rgba(0, 154, 228, 0.06);
+}
+
+.seminovos__category-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 7px;
+}
+
+.seminovos__category-name {
+  font-size: 13px;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FILTROS
+   ========================================================= */
+
+.seminovos__filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.seminovos__field {
+  display: block;
+
+  height: 68px;
+
+  padding: 12px 15px;
+
+  border: 1px solid #d8dde2;
+  border-radius: 10px;
+
+  background-color: var(--color-white);
+}
+
+.seminovos__field-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #7a7d80;
+
+  font-size: 12.5px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.seminovos__select-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.seminovos__select-wrapper select {
+  width: 100%;
+
+  padding: 0 24px 0 0;
+
+  border: none;
+  outline: none;
+
+  appearance: none;
+
+  color: var(--color-gray-dark);
+  background-color: transparent;
+
+  font-family: var(--font-primary);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.seminovos__select-wrapper svg {
+  position: absolute;
+
+  right: 0;
+
+  color: var(--color-gray-dark);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   BOTÃO BUSCAR
+   ========================================================= */
+
+.seminovos__search {
+  width: 100%;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 12px;
+  padding: 0 18px 0 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: var(--color-white);
+
+  background: linear-gradient(
+    90deg,
+    var(--color-blue),
+    var(--color-blue-light)
+  );
+
+  font-family: var(--font-primary);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.seminovos__search:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 154, 228, 0.25);
+}
+
+.seminovos__search-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   BENEFÍCIOS
+   ========================================================= */
+
+.seminovos__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-top: 35px;
+  padding: 0 15px;
+}
+
+.seminovos__benefit {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.seminovos__benefit-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: var(--color-blue);
+
+  background-color: rgba(0, 154, 228, 0.10);
+}
+
+.seminovos__benefit div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.seminovos__benefit strong {
+  color: var(--color-gray-dark);
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.seminovos__benefit div span {
+  color: #858585;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVO — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .seminovos {
+    padding: 90px 0 100px;
+  }
+
+  .seminovos__showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .seminovos__image {
+    min-height: 420px;
+  }
+
+  .seminovos__finder {
+    padding: 40px;
+  }
+
+  .seminovos__benefits {
+    gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVO — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .seminovos {
+    padding: 70px 0 80px;
+  }
+
+  .seminovos__container {
+    padding: 0 20px;
+  }
+
+  .seminovos__heading {
+    margin-bottom: 32px;
+  }
+
+  .seminovos__eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .seminovos__eyebrow-line {
+    width: 28px;
+    height: 2px;
+  }
+
+  .seminovos__title {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+  }
+
+  .seminovos__description {
+    font-size: 14px;
+  }
+
+  .seminovos__showcase {
+    border-radius: 18px;
+  }
+
+  .seminovos__image {
+    min-height: 330px;
+  }
+
+  .seminovos__image-caption {
+    left: 20px;
+    right: 20px;
+    bottom: 22px;
+  }
+
+  .seminovos__image-caption strong {
+    font-size: 18px;
+  }
+
+  .seminovos__image-caption span {
+    font-size: 11px;
+  }
+
+  .seminovos__image-badge {
+    top: 18px;
+    left: 18px;
+  }
+
+  .seminovos__finder {
+    padding: 30px 20px;
+  }
+
+  .seminovos__finder-title {
+    font-size: 21px;
+  }
+
+  .seminovos__finder-description {
+    font-size: 12px;
+  }
+
+  .seminovos__categories {
+    gap: 8px;
+  }
+
+  .seminovos__category {
+    min-height: 90px;
+  }
+
+  .seminovos__filters {
+    grid-template-columns: 1fr;
+  }
+
+  .seminovos__benefits {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    margin-top: 28px;
+
+    padding: 0;
+  }
+
+  .seminovos__background-circle--one {
+    width: 400px;
+    height: 400px;
+
+    right: -250px;
+  }
+
+  .seminovos__background-circle--two {
+    width: 300px;
+    height: 300px;
+
+    left: -200px;
+  }
+}

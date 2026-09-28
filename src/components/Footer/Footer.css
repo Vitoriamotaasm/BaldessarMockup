@@ -1,0 +1,380 @@
+.footer {
+  width: 100%;
+  background-color: #10295b;
+  color: var(--color-white);
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 55px 34px 15px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.footer__contact {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 70px;
+  align-items: center;
+
+  padding-bottom: 38px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.footer__contact-content {
+  max-width: 700px;
+}
+
+.footer__label {
+  display: block;
+  margin-bottom: 12px;
+
+  color: var(--color-blue-light);
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2.3px;
+}
+
+.footer__contact-title {
+  margin: 0;
+
+  color: var(--color-white);
+
+  font-size: clamp(36px, 3.8vw, 52px);
+  line-height: 1.03;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+}
+
+.footer__contact-title span {
+  color: var(--color-blue-light);
+}
+
+.footer__contact-description {
+  max-width: 520px;
+
+  margin: 17px 0 22px;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer__contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 44px;
+  padding: 0 20px;
+
+  color: var(--color-white);
+  background-color: var(--color-blue);
+
+  border-radius: 23px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer__contact-button:hover {
+  background-color: var(--color-blue-light);
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TELEFONE / EMAIL
+========================================= */
+
+.footer__contact-info {
+  width: 100%;
+}
+
+.footer__contact-item {
+  min-height: 64px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer__contact-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.footer__contact-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-blue-light);
+
+  border: 1px solid rgba(0, 200, 255, 0.22);
+
+  border-radius: 50%;
+}
+
+.footer__contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer__contact-text small {
+  color: rgba(255, 255, 255, 0.42);
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.footer__contact-text strong {
+  color: var(--color-white);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+}
+
+.footer__contact-item:hover strong {
+  color: var(--color-blue-light);
+}
+
+
+/* =========================================
+   NAVEGAÇÃO
+========================================= */
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 40px;
+
+  padding: 28px 0 5px;
+}
+
+
+/* MARCA */
+
+.footer__brand {
+  max-width: 270px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__logo img {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+.footer__brand p {
+  max-width: 250px;
+
+  margin: 10px 0 13px;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+
+/* REDES */
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__social a {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.footer__social a:hover {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+
+/* COLUNAS */
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.footer__column h3 {
+  margin: 0 0 4px;
+
+  color: var(--color-white);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer__column a {
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer__column a:hover {
+  color: var(--color-blue-light);
+}
+
+
+/* =========================================
+   PARTE INFERIOR
+========================================= */
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 13px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+  color: rgba(255, 255, 255, 0.30);
+
+  font-size: 12px;
+}
+
+.footer__bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: rgba(255, 255, 255, 0.30);
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer__bottom a:hover {
+  color: var(--color-blue-light);
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 900px) {
+
+  .footer__contact {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer__contact-info {
+    max-width: 500px;
+  }
+
+  .footer__main {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .footer__container {
+    padding: 45px 20px 16px;
+  }
+
+  .footer__contact {
+    gap: 28px;
+    padding-bottom: 32px;
+  }
+
+  .footer__contact-title {
+    font-size: 34px;
+    letter-spacing: -1.2px;
+  }
+
+  .footer__contact-description {
+    font-size: 13px;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+    padding: 25px 0 22px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+  }
+}

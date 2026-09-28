@@ -1,0 +1,166 @@
+.contato {
+  position: relative;
+  width: 100%;
+  padding: 95px 0;
+  background-color: #0b224e;
+  overflow: hidden;
+}
+
+.contato__container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 34px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.contato__content {
+  max-width: 720px;
+}
+
+.contato__label {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--color-blue-light);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.contato__title {
+  margin: 0;
+  color: var(--color-white);
+  font-size: clamp(42px, 4.5vw, 60px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.contato__title span {
+  color: var(--color-blue-light);
+}
+
+.contato__description {
+  max-width: 520px;
+  margin: 22px 0 30px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.contato__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  height: 52px;
+  padding: 0 24px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 26px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contato__button:hover {
+  background-color: var(--color-blue-light);
+  transform: translateY(-2px);
+}
+
+.contato__info {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.contato__info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.contato__info-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.contato__icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blue-light);
+  border: 1px solid rgba(0, 200, 255, 0.25);
+  border-radius: 50%;
+}
+
+.contato__info-item > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contato__info-item small {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.contato__info-item strong {
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contato__info-item:hover strong {
+  color: var(--color-blue-light);
+}
+
+@media (max-width: 800px) {
+  .contato {
+    padding: 75px 0;
+  }
+
+  .contato__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .contato__info {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato {
+    padding: 65px 0;
+  }
+
+  .contato__container {
+    padding: 0 20px;
+  }
+
+  .contato__title {
+    font-size: 38px;
+    letter-spacing: -1.3px;
+  }
+
+  .contato__description {
+    font-size: 14px;
+  }
+
+  .contato__info {
+    width: 100%;
+  }
+}
