@@ -9,6 +9,12 @@ const units = [
       'https://www.google.com/maps/dir//Randon+Baldessar+Itaitinga+-+Rod.+Br116+-+Jabuti,+Itaitinga+-+CE,+61880-000/@-3.9547046,-38.6575505,12z/data=!4m18!1m8!3m7!1s0x7c757005b5c0859:0xb24ced5ae58f151!2sRandon+Baldessar+Itaitinga!8m2!3d-3.9547046!4d-38.5133549!15sCj9Sb2RvdmlhIEJSLTExNiwga20gMjIsIG7CuiAxNDkwMCwgQmFpcnJvIEppYm9pYSwgSXRhaXRpbmdhIC0gQ0WSAQpjYXJfZGVhbGVy4AEA!16s%2Fg%2F11vzfrf20t!4m8!1m1!4e2!1m5!1m1!1s0x7c757005b5c0859:0xb24ced5ae58f151!2m2!1d-38.5133549!2d-3.9547046?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D',
   },
   {
+    city: 'Tianguá',
+    state: 'Ceará',
+    address: 
+    'https://www.google.com/maps/place/BR-222,+5+-+c+01+-+Gov.+Ferraz,+Tiangu%C3%A1+-+CE,+62320-000/@-3.7348192,-41.0041997,19.06z/data=!4m5!3m4!1s0x7eb49066cb56a21:0xa8d84c21692398cb!8m2!3d-3.7352226!4d-41.0032335?entry=ttu&g_ep=EgoyMDI2MDkyNy4wIKXMDSoASAFQAw%3D%3D'
+  },
+  {
     city: 'Teresina',
     state: 'Piauí',
     address:
